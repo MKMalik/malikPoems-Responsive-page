@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.frontpage {
+    width: 100%;
+    height: 100vh;
+    background: #292929;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.top {
+    width: 100%;
+    height: 75vh;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.top a {
+    display: none;
+}
+
+.titlebar {
+    display: flex;
+    flex-direction: row;
+}
+
+.titleHead {
+    flex-grow: 3;
+}
+
+.titleLinks {
+    flex-grow: 2;
+}
+
+.titlebar .titleLinks ul li a {
+    text-decoration: none;
+    color: #EAF0F1;
+    padding: 20px;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.titlebar .titleLinks ul li a:hover {
+    color: #fff;
+}
+
+.titlebar .titleLinks ul li {
+    list-style: none;
+}
+
+.sideElement {
+    display: flex;
+    width: 100%;
+}
+
+.bottom {
+    width: 100%;
+    height: 25vh;
+    background: grey;
+    display: flex;
+}
+
+.bottomElement {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    justify-content: space-between;
+    border-right: 2px solid #2c3e50;
+}
+
+.bottom ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 3px #000;
+    font-size: 40px;
+}
+
+.bottom ul li {
+    list-style: none;
+}
+
+
+.about {
+    background: url(../img/about.png);
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    display: flex;
+    flex-grow: 2;
+}
+
+.books {
+    background: url(../img/book.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.blog {
+    background: url(../img/blog.png);
+    background-size: cover;
+}
+
+.poetry {
+    background: url(../img/poetry.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.articles {
+    background: url(../img/article.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.top h1 {
+    font-size: 100px;
+    font-family: 'Merienda', cursive;
+    color: #fff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.page2 .titlebar {
+    width: 100%;
+    height: 15vh;
+    background: #E5B143;
+}
+
+.page2 .titlebar h1 {
+    font-size: 8vw;
+    font-size: 80px;
+    font-family: 'Merienda', cursive;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.titlebar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 5px 0 10px rgba(0,0,0,0.5);
+}
+
+.lines .invertComma1 {
+    margin: 20px 0 0 10px;
+}
+
+.lines .invertComma2 {
+    transform: rotate(180deg);
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    width: 65%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* poetry lines start from below */
+.text h2 {
+    color: #E74292;
+    width: 100%;
+    margin: auto;
+    font-family: arial;
+    display: flex;
+}
+
+.lineblock {
+    width: 100%;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.poem1 {
+    display: flex;
+    align-self: center;
+}
+
+.poem2 {
+    display: flex;
+    align-self: center;
+}
+
+.poem2 h2 {
+    color: green;
+}
+
+.poem .text {
+    width: 80%;
+    height: auto;
+}
+
+.intro {
+    width: 35%;
+    height: 85vh;
+}
+
+.intro .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    position: sticky;
+    top: 50%;
+}
+
+.intro .image img {
+    box-shadow: -3px 3px 6px #2B2B52;
+}
+
+.intro .name {
+    font-size: 2.1vw;
+    color: #E74292;
+    text-shadow: -3px 2px 3px #2B2B52;
+}
+
+
+/* ................Mobile Version..................... */
+
+@media only screen and (max-width: 600px) {
+
+    .frontpage {
+        height: auto;
+    }
+
+    .top {
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .top h1 {
+        font-size: 10vw;
+    }
+
+    .toggle-menu {
+        display: flex;
+    }
+
+    label {
+        display: block;
+        color: #e5b143;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #333;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: color 0.3s;
+    }
+
+    label:hover {
+        color: #fff;
+    }
+
+    .top a:hover {
+        color: #fff;
+    }
+
+    .sideElement {
+        width: 40%;
+        height: 100vh;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        transform-origin: left;
+        transform: translateX(-100%);
+        transition: transform .3s ease-in-out;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .toggle:checked ~ .sideElement {
+        transform: translateX(0);
+    }
+
+    .bottom {
+        transform: translateY(-100vh);
+        height: 0;
+    }
+
+    .side:hover .bottom {
+        display: none;
+    }
+
+    .sideElement .about {
+        width: 100%;
+        opacity: 0.9;
+        transition: .3s;
+    }
+
+    .sideElement .about:hover {
+        opacity: 1;
+    }
+
+    .sideElement .books {
+        width: 100%;
+        opacity: 0.9;
+        transition: .3s;
+    }
+
+    .sideElement .books:hover {
+        opacity: 1;
+    }
+
+    .sideElement .blog {
+        width: 100%;
+        opacity: 0.9;
+        transition: .3s;
+    }
+
+    .sideElement .blog:hover {
+        opacity: 1;
+    }
+
+    .sideElement .poetry {
+        width: 100%;
+        opacity: 0.9;
+        transition: .3s;
+    }
+
+    .sideElement .poetry:hover {
+        opacity: 1;
+    }
+
+    .sideElement .articles {
+        width: 100%;
+        opacity: 0.9;
+        transition: .3s;
+    }
+
+    .sideElement .articles:hover {
+        opacity: 1;
+    }
+
+    .bottomElement {
+        border-right: none;
+    }
+
+
+
+    /*Modification for page2 */
+
+    .page2 .titlebar {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .page2 .titlebar h1 {
+        font-size: 15vw;
+    }
+
+    .titleLinks ul li a{
+        padding: 0;
+        font-size: 2em;
+    }
+    
+    .titlebar .titleLinks ul li a {
+        font-size: 6vw;
+    }
+
+    .poem {
+        display: flex;
+        align-items: center;
+    }
+
+    .poem .invertComma1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .poem .invertComma2 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text h2 {
+        margin: 0;
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .lines .invertComma1 {
+        margin: 20px 0 0 0;
+    }
+
+    .intro {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro .image img {
+        width: 60%;
+        height: auto;
+    }
+
+    .intro .name {
+        font-size: 8vw;
+        color: #292929;
+        text-shadow: -3px 2px 3px #2B2B52;
+    }
+
+}
