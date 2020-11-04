@@ -1,4 +1,4 @@
-* {
+8* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -256,7 +256,7 @@ body {
 
 /* ................Mobile Version..................... */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
 
     .frontpage {
         height: auto;
